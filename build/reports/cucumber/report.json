@@ -1,0 +1,131 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-31T13:12:09.876Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1997100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.hookBefore()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Como usuario en la app",
+        "description": "            Quiero crear tareas con titulo y descripcion\n            Para realizar seguimiento a mis actividades",
+        "id": "task;como-usuario-en-la-app",
+        "after": [
+          {
+            "result": {
+              "duration": 538751700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.hookAfter()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6982400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "la app WhenDo esta abierta",
+            "match": {
+              "location": "runner.MyStepMovile.laAppWhenDoEstaAbierta()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15088830100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "yo hago click en el boton agregarTarjea",
+            "match": {
+              "location": "runner.MyStepMovile.yoHagoClickEnElBotonAgregarTarjea()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3337780800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "yo creo una tarea",
+            "match": {
+              "location": "runner.MyStepMovile.yoCreoUnaTarea(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "titulo",
+                  "CREATE"
+                ]
+              },
+              {
+                "cells": [
+                  "descripcion",
+                  "Esto es una descripcion"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 646223200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "yo realizo click en el boton guardar",
+            "match": {
+              "location": "runner.MyStepMovile.yoRealizoClickEnElBotonGuardar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 793934200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "la tarea con el nombre \"CREATE\" deberia ser creada",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CREATE\"",
+                  "offset": 23
+                }
+              ],
+              "location": "runner.MyStepMovile.laTareaConElNombreDeberiaSerCreada(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Appium"
+          }
+        ]
+      }
+    ],
+    "name": "Task",
+    "description": "",
+    "id": "task",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/createTaskWhenDo.feature",
+    "tags": []
+  }
+]
